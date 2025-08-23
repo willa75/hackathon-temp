@@ -1,0 +1,25 @@
+{
+  "name": "give-a-hack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "drizzle-orm": "^0.44.4",
+    "hono": "^4.9.4",
+    "postgres": "^3.4.7",
+    "sst": "3.17.10",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.152",
+    "drizzle-kit": "^0.31.4",
+    "tsx": "^4.20.4"
+  }
+}
