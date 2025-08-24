@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db": "sst shell drizzle-kit",
+    "db:push": "sst shell drizzle-kit push"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@aws-lambda-powertools/parameters": "^2.25.1",
+    "@aws-sdk/client-ssm": "^3.873.0",
+    "@types/pg": "^8.15.5",
     "dotenv": "^17.2.1",
     "drizzle-orm": "^0.44.4",
     "hono": "^4.9.4",
+    "pg": "^8.16.3",
     "postgres": "^3.4.7",
     "sst": "3.17.10",
     "zod": "^3.24.2"
