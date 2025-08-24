@@ -1,4 +1,7 @@
 import { defineConfig } from "drizzle-kit";
+import { config } from "dotenv";
+
+config();
 
 const { SUPABASE_URL, SUPABASE_PASSWORD } = process.env;
 
