@@ -10,23 +10,17 @@ declare module "sst" {
       "type": "sst.aws.Function"
       "url": string
     }
-    "AuroraVPC": {
-      "type": "sst.aws.Vpc"
-    }
-    "BatmanDatabase": {
-      "clusterArn": string
-      "database": string
-      "host": string
-      "password": string
-      "port": number
-      "reader": string
-      "secretArn": string
-      "type": "sst.aws.Aurora"
-      "username": string
-    }
     "BatmanFrontend": {
       "type": "sst.aws.Nextjs"
       "url": string
+    }
+    "NeighboordhoodTable": {
+      "name": string
+      "type": "sst.aws.Dynamo"
+    }
+    "ZipDemographicTable": {
+      "name": string
+      "type": "sst.aws.Dynamo"
     }
   }
 }

@@ -3,8 +3,7 @@ import { z } from "zod";
 export const SearchQuerySchema = z.object({
     incomeLow: z.number().optional(),
     incomeHigh: z.number().optional(),
-    zipCode: z.string().optional(),
-    houseHoldCountLow: z.number(),
+    houseHoldCountLow: z.number().optional(),
     houseHoldCountHigh: z.number().optional(),
     ageLow: z.number().optional(),
     ageHigh: z.number().optional(),
