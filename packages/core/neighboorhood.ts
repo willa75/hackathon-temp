@@ -43,7 +43,9 @@ export namespace Neighboordhood {
                 neighborhoods = neighborhoods.filter(n => n.median_income <= request.incomeHigh!);
             }
 
-            return neighborhoods;
+            // Sort by median_income in ascending order and return first 3
+            neighborhoods.sort((a, b) => a.median_income - b.median_income);
+            return neighborhoods.slice(0, 3);
         } catch (error) {
             console.error('Error searching neighborhoods:', error);
             throw error;
